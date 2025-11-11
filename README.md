@@ -35,7 +35,7 @@ Por ejemplo, en Nuntajɨɨyi’, es una posibilidad para contar a numeros grande
 
 `Ciento cincuenta y ocho mil seis ciento doce`
 
-Usando ese tipo, espossible para escribir ese numero como: 19+16+10+12.
+Usando ese tipo, es posible para escribir ese numero como: 19+16+10+12.
 
 | Numero | Nivel | Valor |
 |-|-|-|
@@ -56,7 +56,7 @@ Usando ese tipo, espossible para escribir ese numero como: 19+16+10+12.
 
 `Ciento cincuenta y nueve mil nueve ciento noventa y nueve`
 
-Usando ese tipo, espossible para escribir ese numero como: 19+19+19+19.
+Usando ese tipo, es posible para escribir ese numero como: 19+19+19+19.
 
 Y hay una posibilidad para expresar numeros de nivel N con glifos, excepto que no puede dicir estos numeros.
 
