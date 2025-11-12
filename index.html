@@ -1,159 +1,524 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
-<head>
-	<title>Números Mixe-Zoqueanos</title>
-	<meta charset="UTF-8">
-	
-	<style type="text/css">
-		body {
-			text-rendering: optimizeLegibility;
-			font-feature-settings: "kern";
-			-moz-font-feature-settings: "kern=1";
-			-ms-font-feature-settings: "kern";
-			-webkit-font-feature-settings: "kern";
-			-o-font-feature-settings: "kern";
-			font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-			
-			margin: 0 0 0 0;
-			padding: 0 0 0 0;
-			font-size: 24px;
-		}
+  <head>
+    <title>Números Mixe-Zoqueanos</title>
+    <meta charset="UTF-8" />
 
-		h1 {
-			border-bottom: 2px solid;
-		}
-		
-		p {
-			margin: 0.25em 0 0.25em 0 ;
-			padding: 0;
-		}
+    <style type="text/css">
+      body {
+        text-rendering: optimizeLegibility;
+        font-feature-settings: "kern";
+        -moz-font-feature-settings: "kern=1";
+        -ms-font-feature-settings: "kern";
+        -webkit-font-feature-settings: "kern";
+        -o-font-feature-settings: "kern";
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 
-		div {
-			padding: 1em;
-		}
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+        font-size: 24px;
+      }
 
-		@font-face {
-			font-family: "numeros mixezoqueanosTTF";
-			src: url("numeros mixezoqueanos.ttf") format('truetype');
-		}
+      h1,
+      h2 {
+        border-bottom: 2px solid;
+      }
 
-		@font-face {
-			font-family: "numeros mixezoqueanosEOT";
-	 		src: url("numeros mixezoqueanos.eot");
-		}
-		
-		.nmz {
-			font-family: "numeros mixezoqueanosEOT", "numeros mixezoqueanosTTF";
-		}
-		
-		.dark {
-			background: black;
-			color: white;
-		}
+      p {
+        margin: 0.25em 0 0.25em 0;
+        padding: 0;
+      }
 
-		.offwhite {
-			background: rgb(255, 242, 209);
-		}
+      div {
+        padding: 1em;
+      }
 
-		.colorful {
-			background: rgb(51, 51, 51);
-			color: rgb(95, 186, 216);
-		}
+      div.short {
+        padding-bottom: 0.18em;
+        padding-top: 0.18em;
+      }
 
-		ol.lnmz {
-			list-style-type: none;
-			margin: 0;
-			padding:0;
-			counter-reset: customlistcounter -1;
-			list-style-position: outside;
-		}
+      table {
+        width: 30em;
+      }
 
-		ol.lnmz > li {
-			counter-increment: customlistcounter;
-		}
+      @font-face {
+        font-family: "numeros mixezoqueanosTTF";
+        src: url("numeros mixezoqueanos.ttf") format("truetype");
+      }
 
-		ol.lnmz > li:before {
-			content: counter(customlistcounter) " ";
-			font-family: "numeros mixezoqueanosEOT", "numeros mixezoqueanosTTF";
-			font-size: 24px;
-			float: left;
-			width: 1.33em;
-			text-align: right;
-			margin-right: 10px;
-		}
-	</style>
-</head>
-<body>
-	<div class="dark">
-		<h1>Números Mixe-Zoqueanos</h1>
-		<p>Números Mixe-Zoqueanos es un tipo que tiene los glifos para representar los numeros en los lenguages Mixe-Zoqueanos. Ese tipo tiene los numeros 0 hasta 9 y ligaduras para los numeros hasta 40 (y 100). Tiene un simbolo neuvo para representar que uno numero esta arriba de otro. Tiene un glifo expirimental para significar la porcion que esta proxima es un decimal.</p>
-	</div>
-	<div>
-		<p>Los numeros: <span class="nmz">0</span> 0, <span class="nmz">1</span> 1, <span class="nmz">2</span> 2, <span class="nmz">3</span> 3, <span class="nmz">4</span> 4, <span class="nmz">5</span> 5, <span class="nmz">6</span> 6, <span class="nmz">7</span> 7, <span class="nmz">8</span> 8, <span class="nmz">9</span> 9</p>
-		<p>Las ligaduras: <span class="nmz">10</span> 10, <span class="nmz">11</span> 11, <span class="nmz">12</span> 12, <span class="nmz">13</span> 13, <span class="nmz">14</span> 14, <span class="nmz">15</span> 15, <span class="nmz">16</span> 16, <span class="nmz">17</span> 17, <span class="nmz">18</span> 18, <span class="nmz">19</span> 19, <span class="nmz">20</span> 20, <span class="nmz">21</span> 21, <span class="nmz">22</span> 22, <span class="nmz">23</span> 23, <span class="nmz">24</span> 24, <span class="nmz">25</span> 25, <span class="nmz">26</span> 26, <span class="nmz">27</span> 27, <span class="nmz">28</span> 28, <span class="nmz">29</span> 29, <span class="nmz">30</span> 30, <span class="nmz">31</span> 31, <span class="nmz">32</span> 32, <span class="nmz">33</span> 33, <span class="nmz">34</span> 34, <span class="nmz">35</span> 35, <span class="nmz">36</span> 36, <span class="nmz">37</span> 37, <span class="nmz">38</span> 38, <span class="nmz">39</span> 39, <span class="nmz">40</span> 40, <span class="nmz">100</span> 100</p>
-		<p>Es posible para escribir el numero 20 en esa manera <span class="nmz">1.0</span> (1.0) y eso es para decir 1 en la posicion de los 20s y 0 en la posicion de los 1s.</p>
-		<p>Para escribir 400, es possible para escribir <span class="nmz">1.0.0</span> (1.0.0).</p>
-		<p>Usando ese glifo experimental para escribir decimales, podemos escribir 399,399 en esa manera 19.19,19.19: <span class="nmz">19.19,19.19</span></p>
-		<p>Tambien, hay un glifo para hacer fracciones. Podemos escribir <span class="nmz">22/7</span> (22/7) o <span class="nmz">17.15/5.13</span> (355/113) para aproximar pi.</p>
-		<p>Podemos escribir *yɨtmaktatsɨɨmi maktujmɨn makips makwɨsteen: <span class="nmz">19.16.10.12</span> (158612)</p>
-	</div>
-	<div class="offwhite">
-		<p>Es posible para usar esos en listas ordenadas, pero solamente hasta 40. Cuando me voy a añadir mas ligaduras, va estar posible para hacer listas mas grandes.</p>
-		<ol class="lnmz">
-			<li>0</li>
-			<li>1</li>
-			<li>2</li>
-			<li>3</li>
-			<li>4</li>
-			<li>5</li>
-			<li>6</li>
-			<li>7</li>
-			<li>8</li>
-			<li>9</li>
-			<li>10</li>
-			<li>11</li>
-			<li>12</li>
-			<li>13</li>
-			<li>14</li>
-			<li>15</li>
-			<li>16</li>
-			<li>17</li>
-			<li>18</li>
-			<li>19</li>
-			<li>20</li>
-			<li>21</li>
-			<li>22</li>
-			<li>23</li>
-			<li>24</li>
-			<li>25</li>
-			<li>26</li>
-			<li>27</li>
-			<li>28</li>
-			<li>29</li>
-			<li>30</li>
-			<li>31</li>
-			<li>32</li>
-			<li>33</li>
-			<li>34</li>
-			<li>35</li>
-			<li>36</li>
-			<li>37</li>
-			<li>38</li>
-			<li>39</li>
-			<li>40</li>
-		</ol>
-	</div>
-	<div class="dark">
-		<p>Por que es un tipo y no imagenes, es posible para cambiar el color. <span class="nmz">1.19.10</span></p>
-	</div>
-	<div class="colorful">
-		<p>Un poco mas color. <span class="nmz">1.19.10</span></p>
-	</div>
-	<div>
-		<p>Espero que ustedes les gusta el tipo.</p>
-	</div>
-	<div class="dark">
-		<p>Nos vemos!</p>
-	</div>
-</body>
+      @font-face {
+        font-family: "numeros mixezoqueanosEOT";
+        src: url("numeros mixezoqueanos.eot");
+      }
+
+      .nmz {
+        font-family: "numeros mixezoqueanosEOT", "numeros mixezoqueanosTTF";
+      }
+
+      .dark {
+        background: black;
+        color: white;
+      }
+
+      .offwhite {
+        background: rgb(255, 242, 209);
+      }
+
+      a,
+      .colorful {
+        background: rgb(51, 51, 51);
+        color: rgb(95, 186, 216);
+      }
+
+      a {
+        padding: 0.1em;
+        border-radius: 6px;
+      }
+
+      ol.lnmz {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        counter-reset: customlistcounter -1;
+        list-style-position: outside;
+      }
+
+      ol.lnmz > li {
+        counter-increment: customlistcounter;
+        display: inline-flex;
+        width: 8em;
+      }
+
+      ol.lnmz > li:before {
+        content: counter(customlistcounter) " ";
+        font-family: "numeros mixezoqueanosEOT", "numeros mixezoqueanosTTF";
+        font-size: 24px;
+        float: left;
+        width: 1.33em;
+        text-align: right;
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dark">
+      <h1>Números Mixe-Zoqueanos</h1>
+      <p>
+        Números Mixe-Zoqueanos es un tipo que tiene los glifos para representar
+        los numeros en los lenguages Mixe-Zoqueanos. Ese tipo tiene los numeros
+        0 hasta 9 y ligaduras para los numeros hasta 40 (y 100). Tiene un
+        simbolo neuvo para representar que uno numero esta arriba de otro. Tiene
+        un glifo expirimental para significar la porcion que esta proxima es un
+        decimal.
+      </p>
+      <p>
+        Tradicionalmente, los números Mixe-Zoqueanos tiene una sistema de
+        escribir numeros mas grande de 19 verticalmente. Cada poder de 20 tiene
+        otro espacio. Entonces, si quiero escribir el numero de 400, tengo que
+        escribir un 1 arriba de dos espacios (lugares vacios). Ese sistema no es
+        compatible con el systema de typografía utilizada por los sistemas
+        informaticas. Entonces, hice un numero para representar cero en lugar de
+        los espacios. Tambien, hice un símbolo que significa `ko`, o `abajo de
+        ese`.
+      </p>
+      <p>
+        Para aprender mas de los lenguajes que usan ese sistema de numeracíon,
+        leer
+        <a
+          href="https://numeros-mixe-zoqueanos.adaburrows.com/Mije-Sokean%20Languages.html"
+          >Mije-Sokean Languages</a
+        >.
+      </p>
+      <p>Hecho con <a href="https://birdfont.org/">Birdfont</a>.</p>
+      <p>
+        Los archivos para ese tipo estan en
+        <a href="https://github.com/adaburrows/numeros-mixe-zoqueanos">Github</a
+        >.
+      </p>
+    </div>
+    <div>
+      <p>
+        Los numeros: <span class="nmz">0</span> 0, <span class="nmz">1</span> 1,
+        <span class="nmz">2</span> 2, <span class="nmz">3</span> 3,
+        <span class="nmz">4</span> 4, <span class="nmz">5</span> 5,
+        <span class="nmz">6</span> 6, <span class="nmz">7</span> 7,
+        <span class="nmz">8</span> 8, <span class="nmz">9</span> 9
+      </p>
+      <p>
+        Las ligaduras: <span class="nmz">10</span> 10,
+        <span class="nmz">11</span> 11, <span class="nmz">12</span> 12,
+        <span class="nmz">13</span> 13, <span class="nmz">14</span> 14,
+        <span class="nmz">15</span> 15, <span class="nmz">16</span> 16,
+        <span class="nmz">17</span> 17, <span class="nmz">18</span> 18,
+        <span class="nmz">19</span> 19, <span class="nmz">20</span> 20,
+        <span class="nmz">21</span> 21, <span class="nmz">22</span> 22,
+        <span class="nmz">23</span> 23, <span class="nmz">24</span> 24,
+        <span class="nmz">25</span> 25, <span class="nmz">26</span> 26,
+        <span class="nmz">27</span> 27, <span class="nmz">28</span> 28,
+        <span class="nmz">29</span> 29, <span class="nmz">30</span> 30,
+        <span class="nmz">31</span> 31, <span class="nmz">32</span> 32,
+        <span class="nmz">33</span> 33, <span class="nmz">34</span> 34,
+        <span class="nmz">35</span> 35, <span class="nmz">36</span> 36,
+        <span class="nmz">37</span> 37, <span class="nmz">38</span> 38,
+        <span class="nmz">39</span> 39, <span class="nmz">40</span> 40,
+        <span class="nmz">100</span> 100
+      </p>
+      <p>
+        Es posible para escribir el numero 20 en esa manera
+        <span class="nmz">1.0</span> (1.0) y eso es para decir 1 en la posicion
+        de los 20s y 0 en la posicion de los 1s.
+      </p>
+      <p>
+        Para escribir 400, es possible para escribir
+        <span class="nmz">1.0.0</span> (1.0.0).
+      </p>
+      <p>
+        Usando ese glifo experimental para escribir decimales, podemos escribir
+        399,399 en esa manera 19.19,19.19: <span class="nmz">19.19,19.19</span>
+      </p>
+      <p>
+        Tambien, hay un glifo para hacer fracciones. Podemos escribir
+        <span class="nmz">22/7</span> (22/7) o
+        <span class="nmz">17.15/5.13</span> (355/113) para aproximar pi.
+      </p>
+      <p>
+        Podemos escribir *yɨtmaktatsɨɨmi maktujmɨn makips makwɨsteen:
+        <span class="nmz">19.16.10.12</span> (158612)
+      </p>
+    </div>
+    <div class="offwhite">
+      <p>
+        Es posible para usar esos en listas ordenadas, pero solamente hasta 40.
+        Cuando me voy a añadir mas ligaduras, va estar posible para hacer listas
+        mas grandes.
+      </p>
+      <ol class="lnmz">
+        <li>0</li>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+        <li>11</li>
+        <li>12</li>
+        <li>13</li>
+        <li>14</li>
+        <li>15</li>
+        <li>16</li>
+        <li>17</li>
+        <li>18</li>
+        <li>19</li>
+        <li>20</li>
+        <li>21</li>
+        <li>22</li>
+        <li>23</li>
+        <li>24</li>
+        <li>25</li>
+        <li>26</li>
+        <li>27</li>
+        <li>28</li>
+        <li>29</li>
+        <li>30</li>
+        <li>31</li>
+        <li>32</li>
+        <li>33</li>
+        <li>34</li>
+        <li>35</li>
+        <li>36</li>
+        <li>37</li>
+        <li>38</li>
+        <li>39</li>
+        <li>40</li>
+      </ol>
+    </div>
+    <div class="dark">
+      <p>
+        Por que es un tipo y no imagenes, es posible para cambiar el color.
+        <span class="nmz">1.19.10</span>
+      </p>
+    </div>
+    <div class="colorful">
+      <p>Un poco mas color. <span class="nmz">1.19.10</span></p>
+    </div>
+    <div>
+      <p>Espero que ustedes les gusta el tipo.</p>
+    </div>
+    <div class="dark">
+      <h2>Systema de numeracíon</h2>
+    </div>
+    <div class="offwhite short">
+      <p>Los posiciones y valores de los números:</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Nivel</th>
+            <th>Nombre de Nivel</th>
+            <th>Valor de Nivel</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>4</td>
+            <td>tsɨɨmi (carga)</td>
+            <td>8000</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>mɨn (camote)</td>
+            <td>400</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>ips (veinte)</td>
+            <td>20</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>tuum (uno)</td>
+            <td>1</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="offwhite short">
+      <p>
+        Por ejemplo, en Nuntajɨɨyi’, es una posibilidad para contar a numeros
+        grandes:
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Numero</th>
+            <th>Nivel</th>
+            <th>Valor</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="nmz">19</span> *mak-mos-maktas</td>
+            <td>tsɨɨmi</td>
+            <td>19 * 8000</td>
+          </tr>
+          <tr>
+            <td><span class="nmz">16</span> *mak-tujtu</td>
+            <td>mɨn</td>
+            <td>16 * 400</td>
+          </tr>
+          <tr>
+            <td><span class="nmz">10</span> mak</td>
+            <td>ips</td>
+            <td>10 * 20</td>
+          </tr>
+          <tr>
+            <td><span class="nmz">12</span> *mak-wɨs</td>
+            <td>tuum</td>
+            <td>12 * 1</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><strong>Total</strong></td>
+            <td>19 * 8000 + 16 * 400 + 10 * 20 + 12 = 158612</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        Nuntajɨɨyi’(reconstrucción primera): *makmosmaktastsɨɨmi maktujmɨn
+        makips makwɨsteen
+      </p>
+      <p>
+        Nuntajɨɨyi’(reconstrucción segunda): *yɨtmaktatsɨɨmi maktujmɨn makips
+        makwɨsteen
+      </p>
+      <p>Inglés: One hundred fifty-eight thousand six hundred twelve</p>
+      <p>Español: Ciento cincuenta y ocho mil seis ciento doce</p>
+      <p>
+        Usando ese tipo, es posible para escribir ese numero como:
+        <span class="nmz">19.16.10.12</span> (19.16.10.12)
+      </p>
+    </div>
+    <div class="offwhite short">
+      <table>
+        <thead>
+          <tr>
+            <th>Numero</th>
+            <th>Nivel</th>
+            <th>Valor</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="nmz">19</span> *mak-mos-maktas</td>
+            <td>tsɨɨmi</td>
+            <td>19 * 8000</td>
+          </tr>
+          <tr>
+            <td><span class="nmz">19</span> *mak-mos-maktas</td>
+            <td>mɨn</td>
+            <td>19 * 400</td>
+          </tr>
+          <tr>
+            <td><span class="nmz">19</span> *mak-mos-maktas</td>
+            <td>ips</td>
+            <td>19 * 20</td>
+          </tr>
+          <tr>
+            <td><span class="nmz">19</span> *mak-mos-maktas</td>
+            <td>tuum</td>
+            <td>19 * 1</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><strong>Total</strong></td>
+            <td>19 * 8000 + 19 * 400 + 19 * 20 + 19 = 159999</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        Nuntajɨɨyi’(reconstrucción primera): *makmosmaktatsɨɨmi makmosmaktasmɨn
+        makmosmaktasips makmosmaktasteen
+      </p>
+      <p>
+        Nuntajɨɨyi’(reconstrucción segunda): *yɨtmaktatsɨɨmi yɨtmaktasmɨn
+        yɨtmaktasips yɨtmaktasteen
+      </p>
+      <p>Inglés: One hundred fifty-nine thousand nine hundred ninety-nine</p>
+      <p>Español: Ciento cincuenta y nueve mil nueve ciento noventa y nueve</p>
+      <p>
+        Usando ese tipo, es posible para escribir ese numero como:<span
+          class="nmz"
+          >19.19.19.19</span
+        >
+        (19.19.19.19)
+      </p>
+    </div>
+    <div class="offwhite short">
+      <p>
+        Y hay una posibilidad para expresar numeros de nivel N con glifos,
+        excepto que no puede dicir estos numeros.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Nivel</th>
+            <th>Nombre de Nivel</th>
+            <th>Valor de Nivel</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>N</td>
+            <td>?</td>
+            <td>20<sup>N-1</sup></td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>?</td>
+            <td>128000000</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>?</td>
+            <td>64000000</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>?</td>
+            <td>3200000</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>?</td>
+            <td>160000</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>tsɨɨmi (carga)</td>
+            <td>8000</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>mɨn (camote)</td>
+            <td>400</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>ips (veinte)</td>
+            <td>20</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>tuum (uno)</td>
+            <td>1</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="offwhite short">
+      <p>Hay 16,000,000,000 transistores en un procesor M1 de Apple:</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Nivel</th>
+            <th>Numero</th>
+            <th>Valor<sup>Nivel-1</sup></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>8</td>
+            <td><span class="nmz">12</span> (12)</td>
+            <td>12 * 20<sup>7</sup></td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td><span class="nmz">10</span> (10)</td>
+            <td>10 * 20 <sup>6</sup></td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>0</td>
+            <td>0 * 20<sup>5</sup></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>0</td>
+            <td>0 * 20<sup>4</sup></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>0</td>
+            <td>0 * 20<sup>3</sup></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>0</td>
+            <td>0 * 20<sup>2</sup></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>0</td>
+            <td>0 * 20<sup>1</sup></td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>0</td>
+            <td>0 * 20<sup>0</sup></td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        O con ese tipo:
+        <span class="nmz">12.10.0.0.0.0.0.0</span> (12.10.0.0.0.0.0.0).
+      </p>
+    </div>
+    <div class="dark">
+      <p>Nos vemos!</p>
+    </div>
+  </body>
 </html>
