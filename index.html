@@ -42,6 +42,22 @@
         width: 30em;
       }
 
+      table.large {
+        width: 36em;
+      }
+
+      td {
+        text-align: right;
+      }
+
+      td.l {
+        text-align: left;
+      }
+
+      td.short {
+        width: 6em;
+      }
+
       @font-face {
         font-family: "numeros mixezoqueanosTTF";
         src: url("numeros mixezoqueanos.ttf") format("truetype");
@@ -244,42 +260,40 @@
       </p>
     </div>
     <div class="colorful">
-      <p>Un poco mas color. <span class="nmz">1.19.10</span></p>
+      <p>Un poco mas color. <span class="nmz">1.19.10</span> <span style="color: rgb(255, 242, 209);">Mas color?</span> <span style="color: rgb(238, 53, 53);">Okey!</span> <span class="nmz"><span style="color: rgb(255, 53, 198);">12.</span><span style="color: rgb(63, 53, 255);">19.</span><span style="color: rgb(255, 238, 53);">17.</span><span style="color: rgb(1, 162, 60);">9.</span>10</span></p>
     </div>
     <div>
       <p>Espero que ustedes les gusta el tipo.</p>
     </div>
     <div class="dark">
       <h2>Systema de numeracíon</h2>
-    </div>
-    <div class="offwhite short">
       <p>Los posiciones y valores de los números:</p>
       <table>
         <thead>
           <tr>
-            <th>Nivel</th>
-            <th>Nombre de Nivel</th>
-            <th>Valor de Nivel</th>
+            <th>Posición</th>
+            <th>Nombre de Posición</th>
+            <th>Valor de Posición</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>4</td>
+            <td><span class="nmz">1.0.0.0</span></td>
             <td>tsɨɨmi (carga)</td>
             <td>8000</td>
           </tr>
           <tr>
-            <td>3</td>
+            <td><span class="nmz">1.0.0</span></td>
             <td>mɨn (camote)</td>
             <td>400</td>
           </tr>
           <tr>
-            <td>2</td>
+            <td><span class="nmz">20</span></td>
             <td>ips (veinte)</td>
             <td>20</td>
           </tr>
           <tr>
-            <td>1</td>
+            <td><span class="nmz">1</span></td>
             <td>tuum (uno)</td>
             <td>1</td>
           </tr>
@@ -294,166 +308,210 @@
       <table>
         <thead>
           <tr>
-            <th>Numero</th>
-            <th>Nivel</th>
-            <th>Valor</th>
+            <th colspan="2">Numero</th>
+            <th colspan="2">Posición</th>
+            <th colspan="2">Valor</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td><span class="nmz">19</span> *mak-mos-maktas</td>
-            <td>tsɨɨmi</td>
+            <td><span class="nmz">19</span></td>
+            <td class="l">*mak-mos-maktas</td>
+            <td><span class="nmz">1.0.0.0</span></td>
+            <td class="l">tsɨɨmi (carga)</td>
+            <td><span class="nmz">19.0.0.0</span></td>
             <td>19 * 8000</td>
           </tr>
           <tr>
-            <td><span class="nmz">16</span> *mak-tujtu</td>
-            <td>mɨn</td>
+            <td><span class="nmz">16</span></td>
+            <td class="l">*mak-tujtu</td>
+            <td><span class="nmz">1.0.0</span></td>
+            <td class="l">mɨn (camote)</td>
+            <td><span class="nmz">16.0.0</span></td>
             <td>16 * 400</td>
           </tr>
           <tr>
-            <td><span class="nmz">10</span> mak</td>
-            <td>ips</td>
+            <td><span class="nmz">10</span></td>
+            <td class="l">mak</td>
+            <td><span class="nmz">1.0</span></td>
+            <td class="l">ips (veinte)</td>
+            <td><span class="nmz">10.0</span></td>
             <td>10 * 20</td>
           </tr>
           <tr>
-            <td><span class="nmz">12</span> *mak-wɨs</td>
-            <td>tuum</td>
+            <td><span class="nmz">12</span></td>
+            <td class="l">*mak-wɨs</td>
+            <td><span class="nmz">1</span></td>
+            <td class="l">tuum (uno)</td>
+            <td><span class="nmz">12</span></td>
             <td>12 * 1</td>
           </tr>
           <tr>
-            <td></td>
+            <td colspan="2"></td>
             <td><strong>Total</strong></td>
-            <td>19 * 8000 + 16 * 400 + 10 * 20 + 12 = 158612</td>
+            <td></td>
+            <td><span class="nmz">19.16.10.12</span></td>
+            <td>158612</td>
           </tr>
         </tbody>
       </table>
-      <p>
-        Nuntajɨɨyi’(reconstrucción primera): *makmosmaktastsɨɨmi maktujmɨn
-        makips makwɨsteen
-      </p>
-      <p>
-        Nuntajɨɨyi’(reconstrucción segunda): *yɨtmaktatsɨɨmi maktujmɨn makips
-        makwɨsteen
-      </p>
-      <p>Inglés: One hundred fifty-eight thousand six hundred twelve</p>
-      <p>Español: Ciento cincuenta y ocho mil seis ciento doce</p>
-      <p>
-        Usando ese tipo, es posible para escribir ese numero como:
-        <span class="nmz">19.16.10.12</span> (19.16.10.12)
-      </p>
+    </div>
+    <div class=" short">
+      <table class="large">
+        <thead>
+          <th>Lenguaje</th>
+          <th>Numero</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="short">Nuntajɨɨyi’<sup>1</sup></td>
+            <td>*makmosmaktatsɨɨmi maktujmɨn makips makwɨsteen</td>
+          </tr>
+          <tr>
+            <td class="short">Nuntajɨɨyi’<sup>2</sup></td>
+            <td>*yajtmaktatsɨɨmi maktujmɨn makips makwɨsteen</td>
+          </tr>
+          <tr>
+            <td class="short">Español</td>
+            <td>Ciento cincuenta y ocho mil seis ciento doce</td>
+          </tr>
+          <tr>
+            <td class="short">Inglés</td>
+            <td>One hundred fifty-eight thousand six hundred twelve</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
     <div class="offwhite short">
       <table>
         <thead>
           <tr>
-            <th>Numero</th>
-            <th>Nivel</th>
-            <th>Valor</th>
+            <th colspan="2">Numero</th>
+            <th colspan="2">Posición</th>
+            <th colspan="2">Valor</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td><span class="nmz">19</span> *mak-mos-maktas</td>
-            <td>tsɨɨmi</td>
+            <td><span class="nmz">19</span></td>
+            <td class="l">*mak-mos-maktas</td>
+            <td><span class="nmz">1.0.0.0</span></td>
+            <td class="l">tsɨɨmi (carga)</td>
+            <td><span class="nmz">19.0.0.0</span></td>
             <td>19 * 8000</td>
           </tr>
           <tr>
-            <td><span class="nmz">19</span> *mak-mos-maktas</td>
-            <td>mɨn</td>
+            <td><span class="nmz">19</span></td>
+            <td class="l">*mak-mos-maktas</td>
+            <td><span class="nmz">1.0.0</span></td>
+            <td class="l">mɨn (camote)</td>
+            <td><span class="nmz">19.0.0</span></td>
             <td>19 * 400</td>
           </tr>
           <tr>
-            <td><span class="nmz">19</span> *mak-mos-maktas</td>
-            <td>ips</td>
+            <td><span class="nmz">19</span></td>
+            <td class="l">*mak-mos-maktas</td>
+            <td><span class="nmz">1.0</span></td>
+            <td class="l">ips (viente)</td>
+            <td><span class="nmz">19.0</span></td>
             <td>19 * 20</td>
           </tr>
           <tr>
-            <td><span class="nmz">19</span> *mak-mos-maktas</td>
-            <td>tuum</td>
+            <td><span class="nmz">19</span></td>
+            <td class="l">*mak-mos-maktas</td>
+            <td><span class="nmz">1</span></td>
+            <td class="l">tuum (uno)</td>
+            <td><span class="nmz">19</span></td>
             <td>19 * 1</td>
           </tr>
           <tr>
-            <td></td>
+            <td colspan="2"></td>
             <td><strong>Total</strong></td>
-            <td>19 * 8000 + 19 * 400 + 19 * 20 + 19 = 159999</td>
+            <td></td>
+            <td><span class="nmz">19.19.19.19</span></td>
+            <td>159999</td>
           </tr>
         </tbody>
       </table>
-      <p>
-        Nuntajɨɨyi’(reconstrucción primera): *makmosmaktatsɨɨmi makmosmaktasmɨn
-        makmosmaktasips makmosmaktasteen
-      </p>
-      <p>
-        Nuntajɨɨyi’(reconstrucción segunda): *yɨtmaktatsɨɨmi yɨtmaktasmɨn
-        yɨtmaktasips yɨtmaktasteen
-      </p>
-      <p>Inglés: One hundred fifty-nine thousand nine hundred ninety-nine</p>
-      <p>Español: Ciento cincuenta y nueve mil nueve ciento noventa y nueve</p>
-      <p>
-        Usando ese tipo, es posible para escribir ese numero como:<span
-          class="nmz"
-          >19.19.19.19</span
-        >
-        (19.19.19.19)
-      </p>
+    </div>
+    <div class="short">
+      <table class="large">
+        <thead>
+          <th>Lenguaje</th>
+          <th>Numero</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="short">Nuntajɨɨyi’<sup>1</sup></td>
+            <td>*makmosmaktatsɨɨmi makmosmaktasmɨn makmosmaktasips makmosmaktasteen</td>
+          </tr>
+          <tr>
+            <td class="short">Nuntajɨɨyi’<sup>2</sup></td>
+            <td>*yajtmaktatsɨɨmi yajtmaktasmɨn yajtmaktasips yajtmaktasteen</td>
+          </tr>
+          <tr>
+            <td class="short">Español</td>
+            <td>Ciento cincuenta y nueve mil nueve ciento noventa y nueve</td>
+          </tr>
+          <tr>
+            <td class="short">Inglés</td>
+            <td>One hundred fifty-nine thousand nine hundred ninety-nine</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
     <div class="offwhite short">
       <p>
-        Y hay una posibilidad para expresar numeros de nivel N con glifos,
-        excepto que no puede dicir estos numeros.
+        Y hay una posibilidad para expresar numeros de muchos posiciónes con eses glifos,
+        excepto que no podemos hablar estos numeros sin inventar mas nombres para las posiciónes.
       </p>
       <table>
         <thead>
           <tr>
-            <th>Nivel</th>
-            <th>Nombre de Nivel</th>
-            <th>Valor de Nivel</th>
+            <th>Posición</th>
+            <th>Nombre de Posición</th>
+            <th>Valor de Posición</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>N</td>
-            <td>?</td>
-            <td>20<sup>N-1</sup></td>
+            <td><span class="nmz">1.0.0.0.0.0.0.0</span></td>
+            <td class="l">?</td>
+            <td>128,000,000</td>
           </tr>
           <tr>
-            <td>8</td>
-            <td>?</td>
-            <td>128000000</td>
+            <td><span class="nmz">1.0.0.0.0.0.0</span></td>
+            <td class="l">?</td>
+            <td>64,000,000</td>
           </tr>
           <tr>
-            <td>7</td>
-            <td>?</td>
-            <td>64000000</td>
+            <td><span class="nmz">1.0.0.0.0.0</span></td>
+            <td class="l">?</td>
+            <td>3,200,000</td>
           </tr>
           <tr>
-            <td>6</td>
-            <td>?</td>
-            <td>3200000</td>
+            <td><span class="nmz">1.0.0.0.0</span></td>
+            <td class="l">?</td>
+            <td>160,000</td>
           </tr>
           <tr>
-            <td>5</td>
-            <td>?</td>
-            <td>160000</td>
+            <td><span class="nmz">1.0.0.0</span></td>
+            <td class="l">tsɨɨmi (carga)</td>
+            <td>8,000</td>
           </tr>
           <tr>
-            <td>4</td>
-            <td>tsɨɨmi (carga)</td>
-            <td>8000</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>mɨn (camote)</td>
+            <td><span class="nmz">1.0.0</span></td>
+            <td class="l">mɨn (camote)</td>
             <td>400</td>
           </tr>
           <tr>
-            <td>2</td>
-            <td>ips (veinte)</td>
+            <td><span class="nmz">1.0</span></td>
+            <td class="l">ips (veinte)</td>
             <td>20</td>
           </tr>
           <tr>
-            <td>1</td>
-            <td>tuum (uno)</td>
+            <td><span class="nmz">1</span></td>
+            <td class="l">tuum (uno)</td>
             <td>1</td>
           </tr>
         </tbody>
@@ -464,58 +522,74 @@
       <table>
         <thead>
           <tr>
-            <th>Nivel</th>
             <th>Numero</th>
-            <th>Valor<sup>Nivel-1</sup></th>
+            <th>Posición</th>
+            <th colspan="2">Valor</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>8</td>
             <td><span class="nmz">12</span> (12)</td>
-            <td>12 * 20<sup>7</sup></td>
+            <td><span class="nmz">1.0.0.0.0.0.0.0</span></td>
+            <td><span class="nmz">12.0.0.0.0.0.0.0</span></td>
+            <td>12*128,000,000</td>
           </tr>
           <tr>
-            <td>7</td>
             <td><span class="nmz">10</span> (10)</td>
-            <td>10 * 20 <sup>6</sup></td>
+            <td><span class="nmz">1.0.0.0.0.0.0</span></td>
+            <td><span class="nmz">10.0.0.0.0.0.0</span></td>
+            <td>10*64,000,000</td>
           </tr>
           <tr>
-            <td>6</td>
             <td>0</td>
-            <td>0 * 20<sup>5</sup></td>
+            <td><span class="nmz">1.0.0.0.0.0</span></td>
+            <td><span class="nmz">0</span></td>
+            <td>3,200,000</td>
           </tr>
           <tr>
-            <td>5</td>
             <td>0</td>
-            <td>0 * 20<sup>4</sup></td>
+            <td><span class="nmz">1.0.0.0.0</span></td>
+            <td><span class="nmz">0</span></td>
+            <td>160,000</td>
           </tr>
           <tr>
-            <td>4</td>
             <td>0</td>
-            <td>0 * 20<sup>3</sup></td>
+            <td><span class="nmz">1.0.0.0</span></td>
+            <td><span class="nmz">0</span></td>
+            <td>8,000</td>
           </tr>
           <tr>
-            <td>3</td>
             <td>0</td>
-            <td>0 * 20<sup>2</sup></td>
+            <td><span class="nmz">1.0.0</span></td>
+            <td><span class="nmz">0</span></td>
+            <td>400</td>
           </tr>
           <tr>
-            <td>2</td>
             <td>0</td>
-            <td>0 * 20<sup>1</sup></td>
+            <td><span class="nmz">1.0</span></td>
+            <td><span class="nmz">0</span></td>
+            <td>20</td>
           </tr>
           <tr>
+            <td>0</td>
+            <td><span class="nmz">1</span></td>
+            <td><span class="nmz">0</span></td>
             <td>1</td>
-            <td>0</td>
-            <td>0 * 20<sup>0</sup></td>
+          </tr>
+          <tr>
+            <td colspan="2"><strong>Total</strong></td>
+            <td><span class="nmz">12.10.0.0.0.0.0.0</span></td>
+            <td>16,000,000,000</td>
           </tr>
         </tbody>
       </table>
-      <p>
-        O con ese tipo:
-        <span class="nmz">12.10.0.0.0.0.0.0</span> (12.10.0.0.0.0.0.0).
-      </p>
+    </div>
+    <div class="colorful">
+      <h2>Notes</h2>
+      <ol>
+        <li>Esa es una reconstrucción del sistema de numeracíon en Nuntajɨɨyi’ en la manera de los lenguajes Numte oote y Wää ‘oot.</li>
+        <li>Esa es una reconstrucción del sistema de numeracíon en Nuntajɨɨyi’ en la manera de los lenguajes en Ode y Tsuni.</li>
+      </ol>
     </div>
     <div class="dark">
       <p>Nos vemos!</p>
