@@ -3,7 +3,9 @@
   <head>
     <title>Números Mixe-Zoqueanos</title>
     <meta charset="UTF-8" />
-
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Inter" />
+    <!-- Include to use this font -->
+    <link rel="stylesheet" type="text/css" href="https://numeros-mixe-zoqueanos.adaburrows.com/numeros-mixe-zoqueanos.css" />
     <style type="text/css">
       body {
         text-rendering: optimizeLegibility;
@@ -12,7 +14,7 @@
         -ms-font-feature-settings: "kern";
         -webkit-font-feature-settings: "kern";
         -o-font-feature-settings: "kern";
-        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-family: "Inter","Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 
         margin: 0 0 0 0;
         padding: 0 0 0 0;
@@ -58,18 +60,8 @@
         width: 6em;
       }
 
-      @font-face {
-        font-family: "numeros mixezoqueanosTTF";
-        src: url("numeros mixezoqueanos.ttf") format("truetype");
-      }
-
-      @font-face {
-        font-family: "numeros mixezoqueanosEOT";
-        src: url("numeros mixezoqueanos.eot");
-      }
-
       .nmz {
-        font-family: "numeros mixezoqueanosEOT", "numeros mixezoqueanosTTF";
+        font-family: "Números Mixe-Zoqueanos";
       }
 
       .dark {
@@ -108,7 +100,7 @@
 
       ol.lnmz > li:before {
         content: counter(customlistcounter) " ";
-        font-family: "numeros mixezoqueanosEOT", "numeros mixezoqueanosTTF";
+        font-family: "Números Mixe-Zoqueanos";
         font-size: 24px;
         float: left;
         width: 1.33em;
